@@ -7,7 +7,7 @@ namespace ToDoListAPI.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        // Ta właściwość reprezentuje tabelę w bazie danych
+        // representation of the TodoTask table in the database
         public DbSet<TodoTask> TodoTasks { get; set; }
     }
 }
