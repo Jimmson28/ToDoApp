@@ -12,7 +12,7 @@ Aplikacja do zarządzania zadaniami zbudowana w **ASP.NET Core** (backend) i **V
 
 ### 1. Sklonuj repozytorium
 ```bash
-git clone https://github.com/Jimmson28/ToDoListApp.git
+git clone https://github.com/Jimmson28/ToDoApp.git
 cd ToDoListApp
 ```
 
