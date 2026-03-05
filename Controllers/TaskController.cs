@@ -124,7 +124,7 @@ namespace ToDoListAPI.Controllers
         public async Task<ActionResult<IEnumerable<TodoTask>>> GetUpcomingTasks()
         {
             DateTime now = DateTime.Now;
-            DateTime tommorow = now.AddDays(2).AddSeconds(-1);
+            DateTime tommorow = now.AddDays(2).AddSeconds(-1);  //to see task that expire not in 24 but to end of next day
 
             List<TodoTask> upcomingTasks = await _context.TodoTasks
                 .Where(task => task.IsCompleted == false && task.Deadline >= now && task.Deadline <= tommorow)

@@ -40,7 +40,7 @@ const {
         <h2>Add new task</h2>
         <div class="form-group">
           <label>Title of new task</label>
-          <input type="text" v-model="newTask.title" placeholder="Np. Write email..." />
+          <input type="text" v-model="newTask.title" placeholder="For example, Write email..." />
         </div>
         <div class="form-group">
           <label>Description</label>
@@ -62,7 +62,7 @@ const {
         <div class="form-group">
           <label>Search by date</label>
           <input type="date" v-model="searchedDate" placeholder="Select date..." />
-          <button @click="searchByDate">Szukaj</button>
+          <button @click="searchByDate">Search</button>
         </div>
         <div v-for="task in searchedTasks" :key="task.id">
           {{ task.title }}
