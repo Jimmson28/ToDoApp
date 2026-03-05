@@ -1,0 +1,15 @@
+# .NET
+bin/
+obj/
+.vs/
+*.user
+
+# Baza danych
+*.db
+*.db-shm
+*.db-wal
+
+# Vue / Node
+todolistfrontend/node_modules/
+todolistfrontend/dist/
+todolistfrontend/.vite/
