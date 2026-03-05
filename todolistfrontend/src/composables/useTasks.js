@@ -11,6 +11,7 @@ export function useTasks() {
   const searchedTasks = ref([]);
   const filteredTasks = ref([]);
   const upcomingTasks = ref([]);
+  const errorMessage = ref('');
 
   function getTodayDate() {
     const d = new Date();
@@ -117,7 +118,8 @@ export function useTasks() {
   }
 
   async function addTask() {
-    if (!newTask.value.title.trim()) {
+    if (!newTask.value.title.trim() || !newTask.value.startDate || !newTask.value.deadline) {
+      errorMessage.value = 'Please fill in all required fields: title, start date, and deadline.';
       return;
     }
 
@@ -250,6 +252,7 @@ export function useTasks() {
     upcomingTasks,
     filteredTasks,
     searchByDate,
-    changeFilter
+    changeFilter,
+    errorMessage
   };
 }

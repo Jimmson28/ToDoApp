@@ -16,7 +16,8 @@ const {
   upcomingTasks,
   filteredTasks,
   searchByDate,
-  changeFilter
+  changeFilter,
+  errorMessage
 } = useTasks();
 </script>
 
@@ -25,6 +26,8 @@ const {
     <header class="top-nav">
       <img src="./assets/TELDAT.svg.png" alt="Logo" class="logo-image" />      
     </header>
+
+    <div v-if="errorMessage" class="error-banner">{{ errorMessage }}</div>
 
     <h1 class="main-title">ToDoApp</h1>
 

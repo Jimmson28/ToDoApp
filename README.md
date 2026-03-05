@@ -42,8 +42,8 @@ Frontend działa na `http://localhost:5173`
 ## Instrukcja obsługi
 
 ### Dodawanie zadania
-1. Wypełnij pole **Title** (wymagane)
-2. Opcjonalnie dodaj **Description**, **Start Date** i **Deadline**
+1. Wypełnij pole **Title**, **Start Date** i **Deadline** (wymagane)
+2. Opcjonalnie dodaj **Description**
 3. Kliknij **Add Task**
 
 ### Filtrowanie zadań
@@ -58,7 +58,7 @@ Kliknij **Edit Task** przy wybranym zadaniu, zmień dane i kliknij **Save change
 Kliknij **Delete** przy wybranym zadaniu
 
 ### Wyszukiwanie po dacie
-W panelu **Search for task** wybierz datę i kliknij **Search** — wyświetlą się niezakończone zadania, które były aktywne w wybranym dniu (czyli takie których Start Date jest przed tą datą, a Deadline po niej)
+W panelu **Search for task** wybierz datę i zatwierdź klikając **Search** button — wyświetlą się niezakończone zadania, które były aktywne w wybranym dniu (czyli takie których Start Date jest przed tą datą, a Deadline po niej)
 
 ### Powiadomienia
 Notification z ostrzeżeniem pojawia się automatycznie gdy istnieje task lub taski,
